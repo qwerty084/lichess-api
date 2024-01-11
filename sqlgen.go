@@ -20,6 +20,6 @@ func createTables() {
             themes VARCHAR(150) NOT NULL,
             game_url VARCHAR(150),
             opening_tags TEXT
-        `
+        )`
 	fmt.Println(puzzleTable)
 }
