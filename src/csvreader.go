@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+// ReadCSV reads a CSV file from the given file path and processes its contents.
 func ReadCSV(filePath string) {
 	file, err := os.Open(filePath)
 
@@ -30,6 +31,4 @@ func ReadCSV(filePath string) {
 			continue
 		}
 	}
-
-	GeneratePuzzleSQL()
 }
