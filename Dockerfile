@@ -2,7 +2,7 @@ FROM golang:1.21.6
 
 WORKDIR /app
 
-COPY . .
+COPY ./src .
 
 RUN go build -o app
 

@@ -19,7 +19,7 @@ func ReadCSV(filePath string) {
 	reader := csv.NewReader(file)
 
 	for {
-		record, err := reader.Read()
+		_, err := reader.Read()
 
 		if err == io.EOF {
 			break
@@ -29,8 +29,6 @@ func ReadCSV(filePath string) {
 			fmt.Printf("There was an error reading a line: %s", err.Error())
 			continue
 		}
-
-		fmt.Println("row: ", record)
 	}
 
 	GeneratePuzzleSQL()
